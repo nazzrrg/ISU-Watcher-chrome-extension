@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<html>
+	<head>
+		<title>ISU WATCHER</title>
+		<link rel="stylesheet" href="popup_style.css">
+		<script type="text/javascript" src="popup.js"> </script>
+        <script type="text/javascript" src="../js/jquery-3.5.1.min.js"> </script>
+	</head>
+	<body>
+		<div class="shadow title_text">
+			<h1>ISU WATCHER</h1>
+		</div>
+		<div class="button-add style style_1">
+			<input id="reload" type="checkbox">
+			<label for="reload" data-text="Уведомлять о перезагрузке"></label>
+			<div class="button-add__icon"></div>
+		</div>
+		
+		<div class="button-add style style_2">
+			<input id="relogin" type="checkbox">
+			<label for="relogin" data-text="Уведомлять о перелогине"></label>
+			<div class="button-add__icon"></div>
+		</div>
+		
+		<div class="button-add style style_3">
+			<input id="ognp" type="checkbox">
+			<label for="ognp" data-text="Уведомлять о появлении ОГНП"></label>
+			<div class="button-add__icon"></div>
+		</div>
+        <div class="style_4 style">
+            <div class="box_container">
+                <div class="tg_text">Tg ID:  </div>
+                <input id="tgID" type="text" placeholder="Ваш Telegram ID">
+                    <div id="tg_btn">Подтвердить</div>
+                    </div>
+        </div>
+        <div class="style style_5">
+            <a href="https://t.me/ISUJesusBot" target = "blank_">Ссылка на бота</a>
+        </div>
+        <div id="test_btn">
+            Отправить тестовое сообщение
+        </div>
+        
+        <div class="start">
+            Для начала работы узнайте свой ID в Telegram при помощи @my_id_bot и введите его сюда. Затем нажмите ссылку на бота и начните сессию (/start). Можете протестировать отправку сообщений одноименной кнопкой.<br>P.S. Вполне очевидно, что для работы расширения вы должны быть в своем аккаунте ИСУ.
+        </div>
+	</body>
+</html>

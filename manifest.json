@@ -1,0 +1,30 @@
+{
+  "manifest_version": 2,
+  "name": "ISU Watcher Extension",
+  "description": "Let's with the war against ISU together. Made with love by nazzrrg",
+  "icons": {
+      "16": "icons/icon.png",
+      "32": "icons/icon.png",
+      "48": "icons/icon.png",
+      "128": "icons/icon.png"
+  },
+  "version" : "1.3.3.7",
+  "browser_action": {
+      "default_icon": "icons/icon.png",
+      "default_popup": "popup/popup.html"
+  },
+  "options_ui": {
+      "page": "popup/popup.html",
+      "open_in_tab": false
+  },
+  "content_scripts": [
+      {
+          "matches": ["*://isu.ifmo.ru/*"],
+          "js": ["js/jquery-3.5.1.min.js", "js/content.js"],
+          "run_at": "document_end"
+      }
+  ],
+  "permissions": [
+      "storage"
+  ]
+}
